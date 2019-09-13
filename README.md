@@ -32,4 +32,5 @@ The system should have the exchange rate to do these transactions from a currenc
 Currently the application has 2 exchange rates loaded:
 * EUR -> GBP
 * GBP -> JPY
+
 You can add more exchange rates for testing by updating resources/migrations.xml
