@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1" author="vartul.agrawal">
+        <createTable tableName="ExchangeRate">
+            <column name="fromCurrency" type="varchar(10)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="toCurrency" type="varchar(10)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="exchangeRate" type="decimal">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="2" author="vartul.agrawal">
+        <insert tableName="ExchangeRate">
+            <column name="fromCurrency">EUR</column>
+            <column name="toCurrency">GBP</column>
+            <column name="exchangeRate">0.89</column>
+        </insert>
+        <insert tableName="ExchangeRate">
+            <column name="fromCurrency">GBP</column>
+            <column name="toCurrency">JPY</column>
+            <column name="exchangeRate">133.425</column>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,12 @@
+{
+  "account": "current",
+  "currentBalance": "109.10",
+  "status": {
+    "operation": "withdraw",
+    "transfer": {
+      "amount": "100.00",
+      "currency": "EUR"
+    },
+    "code": "OK"
+  }
+}

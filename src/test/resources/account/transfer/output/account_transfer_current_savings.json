@@ -1,0 +1,20 @@
+{
+  "from": {
+    "account": "current",
+    "balance": "19.10",
+    "currency": "GBP"
+  },
+  "to": {
+    "account": "savings",
+    "balance": "90.00",
+    "currency": "GBP"
+  },
+  "status": {
+    "code": "OK",
+    "operation": "transfer",
+    "transfer": {
+      "amount": "90.00",
+      "currency": "GBP"
+    }
+  }
+}
